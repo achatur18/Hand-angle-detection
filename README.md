@@ -1,3 +1,25 @@
+# Run Hand angle demo
+1) `git clone https://github.com/achatur18/Hand-angle-detection.git`
+2) `cd Hand-angle-detection/pose-detection/demos/live_video`
+3) install latest version of node
+   * `curl https://raw.github.com/creationix/nvm/master/install.sh | sh`
+
+   * `source ~/.nvm/nvm.sh`
+   
+   * `nvm install 12  #(or whatever version of Node.js you want)`
+    
+4) Remove cache etc. `rm -rf .cache dist node_modules`
+
+5) Build dependency. `yarn build-dep`
+
+6) Install dependencies. `yarn`
+
+7) Run the demo. `yarn watch`
+
+8) The demo runs at `localhost:1234`. (Remember to provide URL model parameter e. g. `localhost:1234/?model=posenet`)
+
+
+
 # Pre-trained TensorFlow.js models
 
 This repository hosts a set of pre-trained models that have been ported to
